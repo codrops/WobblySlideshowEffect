@@ -1,0 +1,155 @@
+@font-face {
+	font-weight: normal;
+	font-style: normal;
+	font-family: 'codropsicons';
+	src:url('../fonts/codropsicons/codropsicons.eot');
+	src:url('../fonts/codropsicons/codropsicons.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/codropsicons/codropsicons.woff') format('woff'),
+		url('../fonts/codropsicons/codropsicons.ttf') format('truetype'),
+		url('../fonts/codropsicons/codropsicons.svg#codropsicons') format('svg');
+}
+
+*, *:after, *:before { -webkit-box-sizing: border-box; box-sizing: border-box; }
+.clearfix:before, .clearfix:after { content: ''; display: table; }
+.clearfix:after { clear: both; }
+
+body {
+	background: #2b414d;
+	color: #fffce1;
+	font-weight: 400;
+	font-size: 1em;
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+a {
+	color: #c94e50;
+	text-decoration: none;
+	outline: none;
+}
+
+a:hover, a:focus {
+	color: #4681a0;
+	outline: none;
+}
+
+button:focus {
+	outline: none;
+}
+
+section {
+	padding: 1em;
+	text-align: center;
+}
+
+.codrops-links {
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 0.69em;
+	line-height: 2.2;
+	padding: 1.61em 0;
+	text-align: center;
+}
+
+.codrops-links a {
+	display: inline-block;
+	padding: 0 20px;
+	text-decoration: none;
+	letter-spacing: 1px;
+}
+
+.codrops-icon:before {
+	margin: 0 4px;
+	text-transform: none;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-family: 'codropsicons';
+	line-height: 1;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+.codrops-icon-drop:before {
+	content: "\e001";
+}
+
+.codrops-icon-prev:before {
+	content: "\e004";
+}
+
+/* Dmeo links */
+.codrops-demos {
+	font-weight: bold;
+}
+
+.codrops-demos a {
+	display: inline-block;
+	margin: 0 3px;
+}
+
+.codrops-demos a.current-demo {
+	color: #4681a0;
+}
+
+/* Related demos */
+.related {
+	margin-top: 5em;
+	padding: 0 0 5em;
+}
+
+.related p {
+	font-size: 1.5em;
+	font-weight: 700;
+	text-shadow: 0 1px 1px rgba(0,0,0,0.05);
+}
+
+.related > a {
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	padding: 10px;
+	max-width: 40%;
+	min-width: 160px;
+}
+
+.related a img {
+	max-width: 100%;
+	opacity: 0.8;
+	border-radius: 10px;
+}
+
+.related a:hover img,
+.related a:active img {
+	opacity: 1;
+}
+
+.related a h3 {
+	margin: 0;
+	padding: 0.5em 0;
+	max-width: 300px;
+	text-align: left;
+}
+
+@media screen and (max-width: 40em) {
+
+	body {
+		font-size: 80%;
+	}
+
+	.related > a {
+		margin: 20px 0;
+	}
+
+}
+
+@media screen and (max-width: 25em) {
+
+	.codrops-icon {
+		font-size: 225%;
+	}
+
+	.codrops-icon span {
+		display: none;
+	}
+
+}
